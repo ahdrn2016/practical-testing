@@ -18,7 +18,7 @@ public class OrderResponse {
     private List<ProductResponse> products;
 
     @Builder
-    public OrderResponse(Long id, int totalPrice, LocalDateTime registeredDateTime, List<ProductResponse> products) {
+    private OrderResponse(Long id, int totalPrice, LocalDateTime registeredDateTime, List<ProductResponse> products) {
         this.id = id;
         this.totalPrice = totalPrice;
         this.registeredDateTime = registeredDateTime;

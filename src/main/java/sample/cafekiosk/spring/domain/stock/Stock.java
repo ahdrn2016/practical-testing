@@ -25,7 +25,7 @@ public class Stock extends BaseEntity {
     private int quantity;
 
     @Builder
-    public Stock(String productNumber, int quantity) {
+    private Stock(String productNumber, int quantity) {
         this.productNumber = productNumber;
         this.quantity = quantity;
     }

@@ -31,7 +31,7 @@ public class ProductCreateRequest {
     private int price;
 
     @Builder
-    public ProductCreateRequest(ProductType type, ProductSellingStatus sellingStatus, String name, int price) {
+    private ProductCreateRequest(ProductType type, ProductSellingStatus sellingStatus, String name, int price) {
         this.type = type;
         this.sellingStatus = sellingStatus;
         this.name = name;
